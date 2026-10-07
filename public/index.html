@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <p id="message"></p>
+
+
+        <!-- ADD STUDENT -->
+
+        <div class="card">
+
+            <h2>Add Student</h2>
+
+            <form id="studentForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Student Name"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Age"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Department"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="marks"
+                    placeholder="Marks"
+                    min="0"
+                    max="100"
+                    required
+                >
+
+                <button type="submit">
+                    Add Student
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- STUDENT LIST -->
+
+        <div class="card">
+
+            <h2>Student Records</h2>
+
+            <button onclick="loadStudents()">
+                Refresh Students
+            </button>
+
+            <button onclick="loadGrades()">
+                Show Grades
+            </button>
+
+            <div id="studentList"></div>
+
+        </div>
+
+
+        <!-- FILTER -->
+
+        <div class="card">
+
+            <h2>Filter Students</h2>
+
+            <input
+                type="number"
+                id="minimumMarks"
+                placeholder="Minimum marks"
+            >
+
+            <button onclick="filterByMarks()">
+                Filter by Marks
+            </button>
+
+
+            <input
+                type="text"
+                id="departmentFilter"
+                placeholder="Department"
+            >
+
+            <button onclick="filterByDepartment()">
+                Filter by Department
+            </button>
+
+        </div>
+
+
+        <button onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

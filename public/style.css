@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+h2 {
+    margin-top: 0;
+}
+
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+input {
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    background: #333;
+    color: white;
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.student {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+
+.student h3 {
+    margin-top: 0;
+}
+
+
+#message {
+    text-align: center;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+
+a {
+    text-decoration: none;
+}
